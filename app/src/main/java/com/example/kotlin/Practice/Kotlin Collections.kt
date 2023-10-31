@@ -25,5 +25,11 @@ fun main() {
 
     studentInfo.put(1, "Ram")
     studentInfo.put(2, "John")
-    studentInfo.put(1, "Katie")
+    studentInfo.put(3, "Katie")
+    println(nums)
+    println(studentInfo.get(1))
+
+    for ((key, value) in studentInfo) {
+        println("$key = $value")
+    }
 }
