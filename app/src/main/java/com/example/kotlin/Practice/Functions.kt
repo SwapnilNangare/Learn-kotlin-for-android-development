@@ -2,17 +2,38 @@ package com.example.kotlin.Practice
 
 fun main() {
     println(addition(20, 50))
-    printCount(5)
+    println("Hello Swapnil".formattedString1())
+    println("The sum is: ${calculateSum(3, 5)}")
+
+
 }
 
-fun addition(num1: Int, num2: Int): Int {
 
-    val sum = num1 + num2
-    return sum
+// this sample function
+fun addition(a: Int, b: Int): Int {
+    return a + b
 }
 
-fun printCount(count: Int = 2) {
-    for (i in 1..count) {
-        println("Hello Swapnil")
-    }
+
+/* Extension functions
+* Extension functions in Kotlin allow you to add new functions to existing classes
+* without modifying their source code. This is particularly useful when working with
+* classes from external libraries or classes that you don't have control over.
+* */
+
+fun String.formattedString1(): String {
+    return "Swapnil-----------------------------"
+
 }
+
+// Infix functions
+
+
+inline fun calculateSum(a: Int, b: Int): Int {
+    return a + b
+}
+
+
+
+
+
