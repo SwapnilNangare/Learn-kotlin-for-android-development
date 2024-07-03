@@ -25,6 +25,28 @@ fun main() {
     } else {
         println("Arrays are of different sizes")
     }
+    println("until in arrays")
+    val array12 = arrayOf(2,7,11,15)
+    val ans= IntArray(2) {0}
+    val target = 18
+
+    for (i2 in 1 until array12.size-1){
+
+        for (j in i2+1 until array12.size){
+            if(array12[i2]+array12[j]==target){
+                ans[0]=i2
+                ans[1]=j
+            }
+        }
+
+
+
+    }
+
+    for (ii in ans){
+
+    }
+
 
 
 }
