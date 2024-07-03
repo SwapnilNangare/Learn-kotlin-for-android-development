@@ -44,4 +44,13 @@ fun main() {
     }
 
 
+    println("Table of 5")
+    val number = 2
+
+    for (i in 1..10) {
+
+        println("$number X $i = " + number * i)
+    }
+
+
 }
