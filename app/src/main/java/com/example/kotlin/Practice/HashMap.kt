@@ -9,7 +9,7 @@ fun main() {
 
     for (key in myMap.keys) {
         //  println(myMap[key])
-     //   println("Element at key :$key = ${myMap.get(key)}")
+        //  println("Element at key :$key = ${myMap.get(key)}")
     }
 
 
@@ -21,6 +21,9 @@ fun main() {
     myHashMap.put(12, "John")
     myHashMap.put(13, "Pascal")
     myHashMap.put(14, "Kivin")
+    myHashMap.remove(14)
+    println(myHashMap.size)
+
 
     for (i in myHashMap.keys) {
         println("Element at key $i = ${myHashMap.get(i)}")
